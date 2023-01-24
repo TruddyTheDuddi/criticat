@@ -16,7 +16,7 @@ if(!isset($_GET['cat_id'])){
 }
 
 // Get the hash md5 of the IP address
-$h_ip = $_SERVER['REMOTE_ADDR'];
+$h_ip = md5($_SERVER['REMOTE_ADDR']);
 
 $msg = makeSafeSQL($db, $_GET['msg']);
 $cat_id = makeSafeSQL($db, $_GET['cat_id']);;
