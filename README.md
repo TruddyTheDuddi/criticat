@@ -3,6 +3,7 @@ Hello world
 ## Update logs
 **v0.3**
 - URL rewriting
+- Made Github repo public! :)
 
 **v0.2**
 - Footer: 
