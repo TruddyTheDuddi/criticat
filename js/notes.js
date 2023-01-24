@@ -15,7 +15,6 @@ function loadNotes() {
 }
 
 function inflateNote(data){
-    console.log(data);
     let note = document.createElement("div");
     note.classList.add("post");
 

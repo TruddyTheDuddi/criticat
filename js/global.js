@@ -71,3 +71,12 @@ function prettyDate(t) {
 
     return out;
 }
+
+function injectFooter(){
+    let footer = document.querySelector('footer');
+    ajax('backend/footer.html', 'GET', '', null, (obj, res) => {
+        footer.innerHTML = res;
+    });
+}
+
+injectFooter();
