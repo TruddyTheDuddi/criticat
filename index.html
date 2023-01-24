@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/global.css">
+    <script src="js/ajax.js"></script>
+    <script src="js/global.js" defer></script>
+    <script src="js/rateme.js" defer></script>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <title>CritiCat</title>
+
+</head>
+<body>
+    
+    <div class="content" id="form">
+
+        <h1><small>Tell me,</small> how am I doing?</h1>
+        
+        <div>
+            Post some <b>feedback on Muddi</b>, positive or negative. As long as you're constructive, you're more than welcome to leave it here!
+        </div>
+
+        <textarea name="post_box" id="post_box" rows="2" placeholder="Go ahead don't be shy!" autocomplete="off"></textarea>
+
+        <div class="cat">
+            <div><b>Any category</b> that applies to your message?</div>
+            <div class="cat_list" id="cat_list">
+                <label>
+                    <input type="radio" name="category" value="1" checked="checked" autocomplete="off">
+                    <span class="tick"></span>
+                    <span id="cat_name">General</span>
+                </label>
+                <label>
+                    <input type="radio" name="category" value="2" autocomplete="off">
+                    <span class="tick"></span>
+                    <span id="cat_name" title="Feedback to learn, grow, and improve as a person. This can be feedback on my personality, my tastes, social skills, and personal development.">My personality</span>
+                </label>
+                <label>
+                    <input type="radio" name="category" value="3" autocomplete="off">
+                    <span class="tick"></span>
+                    <span id="cat_name" title="Anything related to my creations or skills related to project. You can use this for specific projects as well.">Creations</span>
+                </label>
+                <label>
+                    <input type="radio" name="category" value="4" autocomplete="off">
+                    <span class="tick"></span>
+                    <span id="cat_name" title="If you just want to give me a pat-pat on my back. Always welcome!">Motivational</span>
+                </label>
+            </div>
+            <div class="desc" id="cat_desc" style="display: none;"></div>
+        </div>
+
+        <div class="submit_area">
+            <button id="submit_btn">Send!</button>
+            <div class="resp_msg" id="resp_msg" style="display: none;">There was an error... :( Can you try that again?</div>
+        </div>
+
+    </div>
+
+    <div class="content" id="success" style="display: none;">
+        <h1>Thank you! :)</h1>
+        
+        <div>
+            Thanks a lot for your time, for the feedback. <b>Have a nice day!</b>
+        </div>
+
+        <div class="desc"></div>
+    </div>
+
+    <footer>
+        <h2>CritiCat</h2>
+        <div>Anonymous feedback posting</div>
+        <small>Website & Content © 2023 — All rights reserved</small>
+        <div class="links">
+            <a href="https://github.com/TruddyTheDuddi">My Github</a>
+            <a class="disabled" href="notes.html">Notes</a>
+            <a>v0.1</a>
+        </div>
+    </footer>
+
+</body>
+</html>
