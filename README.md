@@ -1,6 +1,9 @@
 Hello world
 
 ## Update logs
+**v0.3**
+- URL rewriting
+
 **v0.2**
 - Footer: 
     - Is now dynamically loaded
